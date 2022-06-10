@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 import requests
 from parsel import Selector
 from pathlib import Path
