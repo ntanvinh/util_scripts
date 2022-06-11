@@ -13,6 +13,13 @@ exec bash
 nvm install 12
 nvm use 12
 
+# yarn
+curl --silent --location https://rpm.nodesource.com/setup_12.x | sudo bash -
+sudo yum install nodejs
+curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+sudo rpm --import https://dl.yarnpkg.com/rpm/pubkey.gpg
+sudo yum install yarn
+
 # mongodb
 sudo tee /etc/yum.repos.d/mongodb-org.repo<<EOF
 [mongodb-org-4.4]
